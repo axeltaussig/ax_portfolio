@@ -2,13 +2,18 @@ import React from 'react';
 import { Buttons } from '../../components';
 import './intro.css';
 
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+
 
 
 function Intro() {
+
+  
   return (
    <>
 
-  <section className="cv-section-Intro">
+<Slide>
 
     <div className="cv-section-Intro-slide V1 slide">
     
@@ -45,7 +50,7 @@ function Intro() {
       </div>
     </div>
 
-  </section>
+</Slide>
 
    </>
   )
