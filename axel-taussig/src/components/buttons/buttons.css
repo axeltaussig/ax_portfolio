@@ -1,0 +1,64 @@
+.buttons {
+    padding: 0px 5vw;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: absolute;
+    /* top: 46.8%; */
+    font-size: 25px;
+    filter: drop-shadow(0 0px 15px white);
+
+}
+
+.button>img {
+    width: 40px;
+    height: 40px;
+}
+
+.button.bottom {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -46vh;
+    left: 50vw;
+    text-align: center;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button.right {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button.left {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button.right span {
+    font-size: 1.3rem;
+    font-weight: 200;
+    opacity: .7;
+    padding-right: 10px;
+}
+
+.button.bottom span {
+    font-size: 1.3rem;
+    opacity: .8;
+    padding: 00px 0px 10px 0px;
+}
