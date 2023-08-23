@@ -1,16 +1,13 @@
-import React from 'react'
-import './buttons.css'
-import leftArrow from '../buttons/ArrowAsset 1Left.svg'
-import buttomArrow from '../buttons/ArrowAsset 2bottom.svg'
-import rightArrow from '../buttons/ArrowAsset 3right.svg'
+import React from "react";
+import "./buttons.css";
+import leftArrow from "../buttons/ArrowAsset 1Left.svg";
+import buttomArrow from "../buttons/ArrowAsset 2bottom.svg";
+import rightArrow from "../buttons/ArrowAsset 3right.svg";
 
 function Buttons() {
-
-    
   return (
     <>
-    
-    <div className="buttons">
+      <div className="buttons">
         <button className="button left" onclick="">
           <img src={leftArrow} alt="" />
         </button>
@@ -23,9 +20,8 @@ function Buttons() {
           <img src={rightArrow} alt="" />
         </button>
       </div>
-
     </>
-  )
+  );
 }
 
-export default Buttons
+export default Buttons;
