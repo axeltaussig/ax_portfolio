@@ -1,0 +1,120 @@
+.cv-section-Personal-slide.V1>div.buttons>button>img {
+    filter: drop-shadow(0px 0px 0px rgb(0, 0, 0));
+}
+
+.cv-section-Personal-slide.V2>div.buttons>button>img {
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 1));
+}
+
+.cv-section-Personal-slide.V1>.quote,
+.cv-section-Personal-slide.V1>.quote>p {
+    display: none;
+}
+
+.cv-section-Personal-slide.V1 .button.left {
+    visibility: hidden;
+}
+
+.cv-section-Personal-slide.V2 .button.right {
+    visibility: hidden;
+}
+
+.cv-section-Personal-slide.V1 .button.bottom {
+    visibility: hidden;
+}
+
+.cv-section-Personal-slide.V2 .button.bottom {
+    visibility: hidden;
+}
+
+.cv-section-Personal-slide.V1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+
+.cv-section-Personal--images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+}
+
+.cv-section-Personal--image1 {
+    margin: 10px;
+    width: 33%;
+    height: 100%;
+    background-image: url(./images/Fusball-Picture.png);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.41);
+}
+
+.cv-section-Personal--image2 {
+    margin: 10px;
+    width: 33%;
+    height: 100%;
+    background-image: url(./images/Rainbow-Melbourne.JPG);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.41);
+}
+
+.cv-section-Personal--image3 {
+    margin: 10px;
+    width: 33%;
+    height: 100%;
+    background-image: url(./images/Drinking-Mate_2.png);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.41);
+}
+
+.cv-section-Personal_V2-about {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    flex-direction: column;
+}
+
+.cv-section-Personal_V2-about>img {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.cv-section-Personal_V2-about>p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.cv-section-Personal-slide.V2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: all 0.8s;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .cv-section-Personal--images {
+        display: none;
+    }
+
+    .cv-section-Personal-slide.V1 {
+        background: radial-gradient(52.3% 41.1% at 40.60% 48.06%, rgba(0, 0, 0, 0.00) 75.83%, rgba(0, 0, 0, 0.617) 100%), url(./images/Axel-Taussig-Icon.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

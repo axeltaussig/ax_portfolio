@@ -1,0 +1,89 @@
+.cv-section-TV-slide.V1>.quote {
+    display: none;
+}
+
+.cv-section-TV-slide.V1 .button.left {
+    visibility: hidden;
+}
+
+.cv-section-TV-slide.V2 .button.right {
+    visibility: hidden;
+}
+
+.cv-section-TV-slide.V1>div.buttons>button>img {
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 1));
+}
+
+.cv-section-TV-slide.V1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+
+.cv-section-TV-TTR {
+    width: calc(800px + 8vw);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(113px + 3vw);
+    line-height: calc(180px + 2vh);
+
+    background: radial-gradient(43.48% 83.03% at 27.56% 56.52%, #114664 0%, #11374D 93.95%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , conic-gradient(from 150.34deg at 23.09% 52.76%, rgba(247, 247, 247, 0.37) -71.25deg, rgba(252, 252, 252, 0) 123.75deg, rgba(247, 247, 247, 0.37) 288.75deg, rgba(252, 252, 252, 0) 483.75deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.cv-section-TV-slide.V2 {
+    background-image: url(./images/Trading_graph.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgb(22, 22, 22);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+
+.cv-section-TV_V2-about {
+    width: calc(277px + 9vw);
+    color: whitesmoke;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: center;
+    position: relative;
+    left: 16%;
+    top: 11%;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .cv-section-TV-TTR {
+        font-size: calc(1rem + 13vw);
+        line-height: normal;
+        text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.02);
+    }
+
+    .cv-section-TV-slide.V2 {
+        background-position: calc(-397px + 44vw) 235px;
+
+
+    }
+
+    .cv-section-TV_V2-about {
+        position: initial;
+        max-width: var(---text-mobile-max-width);
+    }
+}

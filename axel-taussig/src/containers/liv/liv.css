@@ -1,0 +1,64 @@
+.cv-section-LIV-slide.V1 .button.left {
+    visibility: hidden;
+}
+
+.cv-section-LIV-slide.V2 .button.right {
+    visibility: hidden;
+}
+
+.cv-section-LIV-slide.V2>div.buttons>button>img {
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 1));
+}
+
+
+.cv-section-LIV-slide.V1 {
+    background-color: #03164f;
+    color: whitesmoke;
+    background-image: url(./images/LIV\ background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-position-x: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+
+.cv-section-LIV-slide.V1>.quote,
+.cv-section-LIV-slide.V1>.quote>p {
+    border: none;
+    color: #FAFAFA;
+}
+
+.cv-section-LIV-slide.V2 {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+
+.cv-section-LIV-slide.V2 p {
+    max-width: 643px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .cv-section-LIV-quote {
+        position: absolute;
+        bottom: 80vh;
+        left: 50vw;
+    }
+
+    .cv-section-LIV-slide.V2 p {
+        max-width: var(---text-mobile-max-width);
+    }
+}

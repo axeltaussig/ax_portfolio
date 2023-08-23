@@ -1,0 +1,89 @@
+.cv-section-TT-slide.V1>.quote,
+.cv-section-TT-slide.V1>.quote>p {
+    border: none;
+    color: #FAFAFA;
+    text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.832);
+}
+
+.cv-section-TT-slide.V1 .button.left {
+    visibility: hidden;
+}
+
+.cv-section-TT-slide.V2 .button.right {
+    visibility: hidden;
+}
+
+.cv-section-TT-slide.V1>div.buttons>button>img {
+    filter: drop-shadow(0px 0px 0px rgb(255, 255, 255));
+}
+
+.cv-section-TT-slide.V2>div.buttons>button>img {
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 1));
+}
+
+.cv-section-TT-slide.V1 {
+    background-image: url(./images/TT-Alfaliq.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    color: #FAFAFA;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+
+.cv-section-TT-slide.V2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv-section-TT_V2--cardblock {
+    /* width: 80%; */
+    max-width: 1293px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: calc(1vw);
+}
+
+.cv-section-TT_V2-image img {
+    width: calc(250px + 20vw);
+    border-radius: 4px;
+
+}
+
+.cv-section-TT_V2-text {
+    padding: 26px;
+    width: 50%;
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .cv-section-TT-slide.V1 .quote {
+        max-width: 230px;
+    }
+
+    .cv-section-TT_V2-text {
+        padding: none;
+        width: auto;
+    }
+
+    .cv-section-TT_V2--cardblock {
+        flex-direction: column-reverse;
+    }
+}

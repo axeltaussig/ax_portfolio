@@ -1,0 +1,161 @@
+.cv-section-Piedras .slide {
+    padding: 0;
+}
+
+.cv-section-Piedras-slide.V1>.quote,
+.cv-section-Piedras-slide.V1>.quote>p {
+    border: none;
+    color: #FAFAFA;
+    text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.832);
+}
+
+.cv-section-Piedras-slide.V1 .button.left {
+    visibility: hidden;
+}
+
+.cv-section-Piedras-slide.V2 .button.right {
+    visibility: hidden;
+}
+
+.cv-section-Piedras-slide.V1>div.buttons>button>img {
+    filter: drop-shadow(0px 0px 0px rgb(255, 255, 255));
+}
+
+.cv-section-Piedras-slide.V2>div.buttons>button>img {
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 1));
+}
+
+.cv-section-Piedras-slide.V1 {
+    background: radial-gradient(52.3% 41.1% at 40.60% 48.06%, rgba(0, 0, 0, 0.00) 75.83%, rgba(0, 0, 0, 0.617) 100%), url(./images/IMG_9113_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    color: #FAFAFA;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+
+.cv-section-Piedras-slide.V2 {
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.8s;
+}
+
+.cv-section-Piedras_V2-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.cv-section-Piedras_V2-text p {
+    margin-top: 30px;
+    max-width: calc(300px + 2vw);
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.cv-section-Piedras_V2-text img {
+    width: 80px;
+}
+
+.cv-section-Piedras_V2-grid {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    --gap: 10px;
+    --num-cols: 2;
+    --row-height: 20%;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    /* grid-auto-rows: var(--row-height); */
+    gap: var(--gap);
+    padding: var(--gap);
+    grid-auto-flow: dense;
+
+}
+
+.cv-section-Piedras_V2-grid>div {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.cv-section-Piedras_V2-grid .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cv-section-Piedras_V2-grid>div>img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 5px;
+}
+
+.cv-section-Piedras_V2-grid .image-1 {
+    grid-area: 1 / 1 / 5 / 6;
+}
+
+.cv-section-Piedras_V2-grid .image-2 {
+    grid-area: 1 / 6 / 5 / 11;
+}
+
+.cv-section-Piedras_V2-grid .image-3 {
+    grid-area: 5 / 1 / 9 / 7;
+}
+
+.cv-section-Piedras_V2-grid .image-4 {
+    grid-area: 5 / 7 / 12 / 11;
+}
+
+.cv-section-Piedras_V2-grid .image-5 {
+    grid-area: 9 / 1 / 13 / 7;
+}
+
+.cv-section-Piedras_V2-grid .image-6 {
+    grid-area: 12 / 7 / 16 / 11;
+}
+
+.cv-section-Piedras_V2-grid .image-7 {
+    grid-area: 13 / 1 / 16 / 7;
+}
+
+/* Piedras Mobile */
+
+@media only screen and (max-width: 800px) {
+    .cv-section-Piedras_V2-text {
+        max-width: var(---text-mobile-max-width);
+        width: auto;
+    }
+
+    .cv-section-Piedras-slide.V1 {
+        background: radial-gradient(52.3% 41.1% at 40.60% 48.06%, rgba(0, 0, 0, 0.00) 75.83%, rgba(0, 0, 0, 0.617) 100%), url(./images/IMG_9219_Home_Piedras.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
