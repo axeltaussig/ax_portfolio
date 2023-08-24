@@ -9,7 +9,7 @@ function Synq() {
   return (
   <>
   
-  <Slide>
+       <Slide infinite={false} autoplay={false} easing="ease-out" duration={300}>
 
     <div class="cv-section-Synq-slide V1 slide">
         <Buttons />

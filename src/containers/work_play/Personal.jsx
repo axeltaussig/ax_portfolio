@@ -5,16 +5,35 @@ import './personal.css';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
+import picPp from './images/Axel-Taussig-Icon.png'
+
+import arrowPrev from '../../assets/images/buttons/ArrowAsset 1Left.svg'
+import arrowNext from '../../assets/images/buttons/ArrowAsset 3right.svg'
+
+
 
 
 function Personal() {
+
+const buttonStyle = {
+    width: "30px",
+    background: 'none',
+    border: '0px',
+    margin: '0 50px',
+};
+
+const properties = {
+    prevArrow: <button style={{ ...buttonStyle }}><img src={arrowPrev} alt=""/></button>,
+    nextArrow: <button style={{ ...buttonStyle }}><img src={arrowNext} alt=""/></button>
+}
+
   return (
    <>
    
-   <Slide>
+        <Slide infinite={false} autoplay={false} easing="ease-out" duration={300} {...properties}>
 
     <div className="cv-section-Personal-slide V1 slide">
-    <Buttons/>
+   
         <div className="cv-section-Personal-jobtitle jobtitle">
             <h3>Work & Play</h3>
         </div>
@@ -29,9 +48,9 @@ function Personal() {
     </div>
 
     <div className="cv-section-Personal-slide V2 slide">
-     <Buttons/>
+  
         <div className="cv-section-Personal_V2-about">
-            <img src="./Img/Profile/imagesArtboard 6All.png" alt=""/>
+            <img src={picPp} alt=""/>
             <p>I love
             <br/>
             Coffee, soccer, roller hockey, rollerblades at the skatepark, peace, talking on the phone, riding my bike,

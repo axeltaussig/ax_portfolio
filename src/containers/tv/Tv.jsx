@@ -10,7 +10,7 @@ function Tv() {
    <>
    
    
- <Slide className="cv-section-TV">
+      <Slide infinite={false} autoplay={false} easing="ease-out" duration={300}>
     <div className="cv-section-TV-slide V1 slide">
      <Buttons/>
         <div className="cv-section-TV-jobtitle jobtitle">

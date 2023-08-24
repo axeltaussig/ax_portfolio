@@ -5,10 +5,18 @@ import './piedras.css';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
+import PicTaller from './images/imagesArtboard 3Piedras.png'
+import picBanco from './images/imagesArtboard 4Piedras.png'
+import picTaller2 from './images/imagesArtboard 5Piedras.png'
+import picRaiandinomata from './images/imagesArtboard 6Piedras.png'
+import picCascada from './images/imagesArtboard 7Piedras.png'
+import picWaterfall from './images/imagesArtboard 8Piedras.png'
+import picMt from './images/imagesArtboard 9Piedras.png'
+
 function Piedras() {
   return (
  <>
- <Slide className="cv-section-Piedras">
+      <Slide infinite={false} autoplay={false} easing="ease-out" duration={300}>
 
     <div className="cv-section-Piedras-slide V1 slide">
      <Buttons/>
@@ -26,13 +34,13 @@ function Piedras() {
             talents possessed by both individuals are truly inspiring.</p>
         </div>
         <div className="cv-section-Piedras_V2-grid mobile">
-            <div className="image image-1"><img  src="./Img/Piedras/1x/imagesArtboard 7Piedras.png" alt=""/></div>
-            <div className="image image-2"><img  src="./Img/Piedras/1x/imagesArtboard 6Piedras.png" alt=""/></div>
-            <div className="image image-3"><img  src="./Img/Piedras/Site (1).jpg" alt=""/></div>
-            <div className="image image-4"><img  src="./Img/Piedras/1x/imagesArtboard 3Piedras.png" alt=""/></div>
-            <div className="image image-5"><img  src="./Img/Piedras/1x/imagesArtboard 9Piedras.png" alt=""/></div>
-            <div className="image image-6"><img src="./Img/Piedras/1x/imagesArtboard 4Piedras.png" alt=""/></div>
-            <div className="image image-7"><img src="./Img/Piedras/1x/imagesArtboard 5Piedras.png" alt=""/></div>
+            <div className="image image-1"><img  src={picCascada} alt=""/></div>
+            <div className="image image-2"><img  src={picRaiandinomata} alt=""/></div>
+            <div className="image image-3"><img  src={picWaterfall} alt=""/></div>
+            <div className="image image-4"><img  src={PicTaller} alt=""/></div>
+            <div className="image image-5"><img  src={picMt} alt=""/></div>
+            <div className="image image-6"><img src={picBanco} alt=""/></div>
+            <div className="image image-7"><img src={picTaller2} alt=""/></div>
         </div>
     </div>
 

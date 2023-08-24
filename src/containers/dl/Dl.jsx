@@ -13,7 +13,7 @@ function Dl() {
   return (
 <>
 
- <Slide className="cv-section-DL">
+  <Slide infinite={false} autoplay={false} easing="ease-out" duration={300}>
 
     <div className="cv-section-DL-slide V1 slide">
      <Buttons/>
@@ -30,10 +30,10 @@ function Dl() {
   <Buttons/>
         <div className="cv-section-DL_V2-about">
             <div className="cv-section-DL_V2-about-image1 mobile">
-               <img src={picKookaburra} alt=""/> 
+               <img src={picWaterfall} alt=""/> 
             </div>
             <div className="cv-section-DL_V2-about-image2 mobile">
-            <img src={picWaterfall} alt=""/>
+            <img src={picKookaburra} alt=""/>
             </div>
             <div className="cv-section-DL_V2-about-text">
            <p>Expanding on my previous artificial rockwork experience with PIEDRAS, I took part in a project at Taronga Zoo that

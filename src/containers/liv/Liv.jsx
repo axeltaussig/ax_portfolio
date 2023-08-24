@@ -9,7 +9,7 @@ function Liv() {
   return (
    <>
    
-    <Slide>
+        <Slide infinite={false} autoplay={false} easing="ease-out" duration={300}>
 
     <div className="cv-section-LIV-slide V1 slide">
       

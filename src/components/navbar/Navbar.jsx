@@ -3,25 +3,25 @@ import axios from "axios";
 import "./navbar.css";
 
 function Navbar() {
-  const [names, setNames] = useState([]);
+  // const [names, setNames] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("https://api.api-ninjas.com/v1/babynames?gender=neutral", {
-        headers: {
-          "x-api-key": "A+Ncz8PzDeMNU8+IoLgv5A==MBYIfTL1vkeKCwdq",
-        },
-      })
-      .then(function (response) {
-        // handle success
-        setNames(response.data);
-        //console.log(response);
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("https://api.api-ninjas.com/v1/babynames?gender=neutral", {
+  //       headers: {
+  //         "x-api-key": "A+Ncz8PzDeMNU8+IoLgv5A==MBYIfTL1vkeKCwdq",
+  //       },
+  //     })
+  //     .then(function (response) {
+  //       // handle success
+  //       setNames(response.data);
+  //       //console.log(response);
+  //     })
+  //     .catch(function (error) {
+  //       // handle error
+  //       console.log(error);
+  //     });
+  // }, []);
 
   return (
     <>
@@ -35,7 +35,6 @@ function Navbar() {
           </div>
           <ul>
             <li>Digital Marketing Specialist</li>
-            <li>{names}</li>
           </ul>
           <a href="https://www.hyperfocus.au">
             <p>Personal Projects</p>

@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: "Monoton";
-    src: url("./misc/Fonts/Monoton/Monoton-Regular.ttf") format("truetype");
+    src: url("./assets/Fonts/Monoton/Monoton-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Inter";
-    src: url("./misc/Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+    src: url("./assets/Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Quicksand";
-    src: url("./misc/Fonts/Quicksand/Quicksand-VariableFont_wght.ttf") format("truetype");
+    src: url("./assets/Fonts/Quicksand/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
 
 /* Variables */

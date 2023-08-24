@@ -1,6 +1,7 @@
 import React from 'react'
 import { Buttons } from '../../components'
 import './fankens.css'
+import picFankenslogo from './images/Fankens Logo.png'
 
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css';
@@ -9,14 +10,14 @@ function Fankens() {
   return (
   <>
   
-  <Slide className="cv-section-Fankens">
+      <Slide infinite={false} autoplay={false} easing="ease-out" duration={300}>
     
     <div className="cv-section-Fankens-slide V1 slide">
       <Buttons/>
         <div className="cv-section-Fankens-jobtitle jobtitle">
             <h3>2020 - 2023 | Freelance @ Fankens</h3>
         </div>
-        <img src="/Img/Fankens/1x/Fankens LogoArtboard 1HQ.png" alt=""/>
+        <img src={picFankenslogo} alt=""/>
         <div className="cv-section-Fankens-quote quote">
             <p>Fankens logo designed<br/>by Ramon Parajua<i></i></p>
         </div>

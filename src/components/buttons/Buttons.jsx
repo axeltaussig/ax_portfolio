@@ -1,8 +1,8 @@
 import React from "react";
 import "./buttons.css";
-import leftArrow from "../buttons/ArrowAsset 1Left.svg";
-import buttomArrow from "../buttons/ArrowAsset 2bottom.svg";
-import rightArrow from "../buttons/ArrowAsset 3right.svg";
+import leftArrow from "../../assets/images/buttons/ArrowAsset 1Left.svg";
+import buttomArrow from "../../assets/images/buttons/ArrowAsset 2bottom.svg";
+import rightArrow from "../../assets/images/buttons/ArrowAsset 3right.svg";
 
 function Buttons() {
   return (
