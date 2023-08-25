@@ -54,8 +54,10 @@ function Navbar() {
   for (let index = 0; index < array.length; index++) {
     
   const elementSection = array[index];
-  let elementQuote = elementSection.querySelectorAll('.jobtitle > h3');
-  let innerTextQuote = elementQuote[0]
+  
+  let elementQuote = elementSection.querySelectorAll('jobtitle > h3');
+
+  let innerTextQuote = elementQuote
 
 
   ScrollTrigger.create({
@@ -75,7 +77,8 @@ function Navbar() {
   },
   
   onEnterBack: function() {
-   gsap.set(elementQuote, { color: "black" })
+  //  gsap.set(elementQuote, { color: "black" })
+      console.log(innerTextQuote)
   }
   
 })
