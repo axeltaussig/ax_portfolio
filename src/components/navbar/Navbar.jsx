@@ -61,6 +61,13 @@ function Navbar() {
 
   }
 
+  // USEEFFECT 
+
+  // |
+  // |
+  // |
+  // V
+
   // No pude cambiar el estilo
   // let changeColor = quote.style.Color = 'red';
 
