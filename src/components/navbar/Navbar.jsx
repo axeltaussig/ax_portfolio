@@ -5,14 +5,15 @@ import "./navbar.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+
 
 function Navbar() {
 
+  gsap.registerPlugin(ScrollTrigger);
 
   // Declarando la constante de cada section y quote
 
-  let section = document.querySelectorAll('.slide.V1, .slide.V2')
+  let section = document.querySelectorAll('.slide.V1')
 
   //Pasando cada nodeElement a array
 
@@ -24,40 +25,15 @@ function Navbar() {
    let navbarValue = useRef(null); 
    const el = navbarValue.current;
 
-  // No pude cambiar el estilo
-  // let changeColor = quote.style.Color = 'red';
-
-  // const [names, setNames] = useState([]);
-
-  useEffect(() => {
-
-
-    // axios
-    //   .get("https://api.api-ninjas.com/v1/babynames?gender=neutral", {
-    //     headers: {
-    //       "x-api-key": "A+Ncz8PzDeMNU8+IoLgv5A==MBYIfTL1vkeKCwdq",
-    //     },
-    //   })
-    //   .then(function (response) {
-    //     // handle success
-    //     setNames(response.data);
-    //     //console.log(response);
-    //   })
-    //   .catch(function (error) {
-    //     // handle error
-    //     console.log(error);
-    //   });
-
- 
-
+  //  Looping all the sections
 
   for (let index = 0; index < array.length; index++) {
     
   const elementSection = array[index];
   
-  let elementQuote = elementSection.querySelectorAll('jobtitle > h3');
+  let elementQuote = elementSection.querySelectorAll('.jobtitle h3');
 
-  let innerTextQuote = elementQuote
+  let innerTextQuote = elementQuote[0]
 
 
   ScrollTrigger.create({
@@ -69,7 +45,7 @@ function Navbar() {
   
   onEnter: function() {
     // gsap.set(elementQuote, { color: "red" })
-    //   el.innerText = {innerTextQuote}
+      // el.innerText = {innerTextQuote}
     //   console.log(innerTextQuote)
 
     console.log(innerTextQuote)
@@ -78,14 +54,42 @@ function Navbar() {
   
   onEnterBack: function() {
   //  gsap.set(elementQuote, { color: "black" })
-      console.log(innerTextQuote)
+      // console.log(innerTextQuote)
   }
   
 })
 
   }
 
-  }, [array]);
+  // No pude cambiar el estilo
+  // let changeColor = quote.style.Color = 'red';
+
+  // const [names, setNames] = useState([]);
+
+  // useEffect(() => {
+
+
+  //   // axios
+  //   //   .get("https://api.api-ninjas.com/v1/babynames?gender=neutral", {
+  //   //     headers: {
+  //   //       "x-api-key": "A+Ncz8PzDeMNU8+IoLgv5A==MBYIfTL1vkeKCwdq",
+  //   //     },
+  //   //   })
+  //   //   .then(function (response) {
+  //   //     // handle success
+  //   //     setNames(response.data);
+  //   //     //console.log(response);
+  //   //   })
+  //   //   .catch(function (error) {
+  //   //     // handle error
+  //   //     console.log(error);
+  //   //   });
+
+ 
+
+
+
+  // }, [array]);
 
   return (
     <>
