@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "./navbar.css";
 
@@ -10,15 +10,19 @@ gsap.registerPlugin(ScrollTrigger);
 function Navbar() {
 
 
+  // Declarando la constante de cada section y quote
 
-  // Declarando la constante de cada section
+  let section = document.querySelectorAll('.slide.V1, .slide.V2')
 
-  let quote = document.querySelector('.slide.quote');
+  //Pasando cada nodeElement a array
 
-  //No se porq no me lo declara null.
-  let section = document.querySelector('.slide.V1, .slide.V2');
+  const array = Array.from(section);
 
-  console.log(section)
+
+  // Declarando navbar Value
+
+   let navbarValue = useRef(null); 
+   const el = navbarValue.current;
 
   // No pude cambiar el estilo
   // let changeColor = quote.style.Color = 'red';
@@ -44,24 +48,41 @@ function Navbar() {
     //     console.log(error);
     //   });
 
+ 
+
+
+  for (let index = 0; index < array.length; index++) {
+    
+  const elementSection = array[index];
+  let elementQuote = elementSection.querySelectorAll('.jobtitle > h3');
+  let innerTextQuote = elementQuote[0]
+
+
   ScrollTrigger.create({
-  
-  trigger: ('section.text-change'),
-  start: 'top -=100px', 
+
+  trigger: (elementSection),
+  start: '50% =+200',
+  end: '=+500 bottom',
+  markers: true,
   
   onEnter: function() {
-    gsap.set('h2.one', { display: "none" })
-    gsap.set('h2.two', { display: "unset" })
+    // gsap.set(elementQuote, { color: "red" })
+    //   el.innerText = {innerTextQuote}
+    //   console.log(innerTextQuote)
+
+    console.log(innerTextQuote)
+  
   },
   
-  onLeaveBack: function() {
-    gsap.set('h2.one', { display: "unset" })
-    gsap.set('h2.two', { display: "none" })
+  onEnterBack: function() {
+   gsap.set(elementQuote, { color: "black" })
   }
   
 })
 
-  }, []);
+  }
+
+  }, [array]);
 
   return (
     <>
@@ -74,7 +95,7 @@ function Navbar() {
             <h1>Axel Taussig</h1>
           </div>
           <ul>
-            <li>Digital Marketing Specialist</li>
+            <li ref={navbarValue}>Digital Marketing Specialist</li>
           </ul>
           <a href="https://www.hyperfocus.au">
             <p>Personal Projects</p>
