@@ -11,7 +11,6 @@ function Navbar() {
   const array = Array.from(section);
 
   let navbarValue = useRef(null);
-  let innerTextQuote = ""; // Initialize the variable
 
   useEffect(() => {
     for (let index = 0; index < array.length; index++) {
@@ -24,17 +23,22 @@ function Navbar() {
           start: "50% +=200",
           end: "+=500 bottom",
           markers: true,
-
           onEnter: function () {
-            innerTextQuote = jobTitle.innerText;
-            console.log(innerTextQuote);
-            console.log(navbarValue.current.innerText);
-            
-            navbarValue.current.innerText = innerTextQuote;
-          },
+            let innerTextQuote = jobTitle.innerText;
 
+
+            
+            console.log(innerTextQuote)
+            //I don't understand the current
+            console.log(navbarValue.current.innerText)
+            
+            navbarValue.current.innerText = innerTextQuote
+
+          },
           onEnterBack: function () {
-            navbarValue.current.style.color = 'red';
+            // Handle exit animation or other actions if needed
+             navbarValue.current.innerText = innerTextQuote
+            
           }
         });
       }
