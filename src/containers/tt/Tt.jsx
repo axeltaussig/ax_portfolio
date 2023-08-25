@@ -5,10 +5,10 @@ import './tt.css';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
+import picTt from './images/Alejanndro-Taussig_Fabian-Taussig-Marcelo-Taussig.png'
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-import picTt from './images/Alejanndro-Taussig_Fabian-Taussig-Marcelo-Taussig.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
