@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./navbar.css";
 
 function Navbar() {
+
   gsap.registerPlugin(ScrollTrigger);
 
   const section = document.querySelectorAll(".slide.V1");
@@ -13,7 +14,9 @@ function Navbar() {
   let navbarValue = useRef(null);
   let innerTextQuote = ""; // Initialize the variable
 
-  useEffect(() => {
+   let prevJobTitles = {};
+
+   useEffect(() => {
     for (let index = 0; index < array.length; index++) {
       const elementSection = array[index];
       const jobTitle = elementSection.querySelector(".jobtitle h3");
@@ -26,15 +29,22 @@ function Navbar() {
           markers: true,
 
           onEnter: function () {
-            innerTextQuote = jobTitle.innerText;
-            console.log(innerTextQuote);
-            console.log(navbarValue.current.innerText);
+            // innerTextQuote = jobTitle.innerText;
+            // console.log(innerTextQuote);
+            // console.log(navbarValue.current.innerText);
             
-            navbarValue.current.innerText = innerTextQuote;
+            // navbarValue.current.innerText = innerTextQuote;
+
+            console.log(prevJobTitles[elementSection])
+
+                   prevJobTitles[elementSection] = jobTitle.innerText; 
+                 navbarValue.current.innerText = prevJobTitles[elementSection];
           },
 
           onEnterBack: function () {
-            navbarValue.current.style.color = 'red';
+            // navbarValue.current.innerText = 'red';
+
+               navbarValue.current.innerText = prevJobTitles[elementSection];
           }
         });
       }
