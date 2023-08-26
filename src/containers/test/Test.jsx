@@ -1,16 +1,17 @@
 import React from "react";
-import { Buttons } from "../../components";
 import HubspotContactForm from '../../components/forms/form-hubspot'
-import "./test.css";
-
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+
+import { Buttons } from "../../components";
+import { slideConfig } from '../sliderConfig'
+
+import "./test.css";
 
  function Test() {
 
   // useEffect(() => {
-    
-    
+  
   //         //Hubspot
 
   //     const script = document.createElement('script');
@@ -47,7 +48,7 @@ import "react-slideshow-image/dist/styles.css";
   
   return (
     <>
-      <Slide infinite={false} autoplay={false} easing="ease" duration={300}>
+      <Slide {...slideConfig} >
         <div className="cv-section-Test-slide V1 slide">
           <Buttons />
 

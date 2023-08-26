@@ -14,12 +14,17 @@ function Navbar() {
   let navbarValue = useRef(null);
   let innerTextQuote = ""; // Initialize the variable
 
-   let prevJobTitles = {};
+  
 
    useEffect(() => {
+
+     let prevJobTitles = {};
+
+
     for (let index = 0; index < array.length; index++) {
       const elementSection = array[index];
       const jobTitle = elementSection.querySelector(".jobtitle h3");
+      
 
       if (jobTitle) {
         ScrollTrigger.create({
@@ -35,16 +40,18 @@ function Navbar() {
             
             // navbarValue.current.innerText = innerTextQuote;
 
-            console.log(prevJobTitles[elementSection])
+            console.log(prevJobTitles)
 
-                   prevJobTitles[elementSection] = jobTitle.innerText; 
-                 navbarValue.current.innerText = prevJobTitles[elementSection];
+            prevJobTitles[elementSection] = jobTitle.innerText; 
+            navbarValue.current.innerText = prevJobTitles[elementSection];
           },
 
           onEnterBack: function () {
             // navbarValue.current.innerText = 'red';
+            navbarValue.current.innerText = prevJobTitles[elementSection];
 
-               navbarValue.current.innerText = prevJobTitles[elementSection];
+            console.log(prevJobTitles)
+
           }
         });
       }
