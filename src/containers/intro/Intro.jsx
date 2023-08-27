@@ -1,16 +1,19 @@
 import React from "react";
+
 import { Buttons } from "../../components";
-import "./intro.css";
+import { buttonStyle, slideConfig } from '../sliderConfig'
 
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
+import "./intro.css";
+
 function Intro() {
   return (
     <>
-      <Slide infinite={false} autoplay={false} easing="ease" duration={300}>
+      <Slide {...slideConfig}>
         <div className="cv-section-Intro-slide V1 slide">
-          <Buttons />
+        
 
           <div className="cv-section-Intro-jobtitle jobtitle">
             <h3>Digital Marketing Specialist</h3>
@@ -27,7 +30,7 @@ function Intro() {
         </div>
 
         <div className="cv-section-Intro-slide V2 slide">
-          <Buttons />
+        
           <div className="cv-section-Intro-about-V2">
             <p>I deliver meaningful experiences. </p>
             <p>My vision is to inspire you, to spark up your soul.</p>

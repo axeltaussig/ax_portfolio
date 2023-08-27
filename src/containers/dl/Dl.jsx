@@ -1,22 +1,25 @@
 import React from 'react';
+
 import { Buttons } from '../../components';
-import './dl.css';
+import { slideConfig } from '../sliderConfig';
+
+import picKookaburra from './images/DL-imageArtboard 2HQ_V2.jpg'
+import picWaterfall from './images/DL-imageArtboard 3HQ_V2.jpg'
 
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
-import picKookaburra from './images/DL-imageArtboard 2HQ_V2.jpg'
-import picWaterfall from './images/DL-imageArtboard 3HQ_V2.jpg'
+import './dl.css';
 
 
 function Dl() {
   return (
 <>
 
-  <Slide infinite={false} autoplay={false} easing="ease-out" duration={300}>
+  <Slide {...slideConfig} >
 
     <div className="cv-section-DL-slide V1 slide">
-     <Buttons/>
+     
         <div className="cv-section-DL-jobtitle jobtitle">
             <h3>2019 | Rock Artisan @ Design Landscapes</h3>
             <p></p>
@@ -27,7 +30,7 @@ function Dl() {
     </div>
 
     <div className="cv-section-DL-slide V2 slide">
-  <Buttons/>
+  
         <div className="cv-section-DL_V2-about">
             <div className="cv-section-DL_V2-about-image1 mobile">
                <img src={picWaterfall} alt=""/> 

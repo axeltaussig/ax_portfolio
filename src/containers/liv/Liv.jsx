@@ -1,19 +1,22 @@
 import React from 'react'
-import './liv.css'
+
+import { Buttons } from '../../components'
+import { slideConfig } from '../sliderConfig';
+
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css';
 
-import { Buttons } from '../../components'
+import './liv.css'
 
 function Liv() {
   return (
    <>
    
-        <Slide infinite={false} autoplay={false} easing="ease-out" duration={300}>
+         <Slide {...slideConfig}>
 
     <div className="cv-section-LIV-slide V1 slide">
       
-    <Buttons />
+    
 
         <div className="cv-section-LIV-jobtitle jobtitle">
             <h3>2021-2022 | Digital Marketing @ LIV</h3>
@@ -25,7 +28,7 @@ function Liv() {
 
     <div className="cv-section-LIV-slide V2 slide">
      
-      <Buttons />
+      
 
 
         <div className="cv-section-LIV-about">
@@ -36,6 +39,7 @@ function Liv() {
             Projects I worked on include the creation of a new company website from concept to release, an increased membership year by a net 3%, 200+ empowerment initiatives, and Coordinated the Diverse Voices in the Law publication.
         </p>
         </div>
+        <Buttons/>
     </div>
     </Slide>
    

@@ -1,9 +1,7 @@
 import React from 'react';
-import { Buttons } from '../../components';
-import './piedras.css';
 
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css';
+import { Buttons } from '../../components';
+import { slideConfig } from '../sliderConfig';
 
 import PicTaller from './images/imagesArtboard 3Piedras.png'
 import picBanco from './images/imagesArtboard 4Piedras.png'
@@ -13,17 +11,22 @@ import picCascada from './images/imagesArtboard 7Piedras.png'
 import picWaterfall from './images/imagesArtboard 8Piedras.png'
 import picMt from './images/imagesArtboard 9Piedras.png'
 
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+
+import './piedras.css';
+
 function Piedras() {
   return (
  <>
-      <Slide infinite={false} autoplay={false} easing="ease-out" duration={300}>
+      <Slide {...slideConfig}>
 
     <div className="cv-section-Piedras-slide V1 slide">
-     <Buttons/>
+     
       </div>
 
     <div className="cv-section-Piedras-slide V2 slide">
-   <Buttons/>
+   
         <div className="cv-section-Piedras_V2-text">
             <img src="./Img/Piedras/1x/LogoArtboard 2HQ.png" alt=""/>
             <p>PIEDRAS was conceived with the purpose of bringing natural environments into our daily lives. The company's core
@@ -42,6 +45,7 @@ function Piedras() {
             <div className="image image-6"><img src={picBanco} alt=""/></div>
             <div className="image image-7"><img src={picTaller2} alt=""/></div>
         </div>
+        <Buttons/>
     </div>
 
     </Slide>

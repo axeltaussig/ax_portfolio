@@ -1,18 +1,21 @@
 import React from 'react'
+
 import { Buttons } from '../../components'
-import './synq.css'
+import { slideConfig } from '../sliderConfig';
 
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css';
+
+import './synq.css'
 
 function Synq() {
   return (
   <>
   
-       <Slide infinite={false} autoplay={false} easing="ease-out" duration={300}>
+       <Slide {...slideConfig}>
 
     <div class="cv-section-Synq-slide V1 slide">
-        <Buttons />
+        
         <div class="cv-section-Synq-jobtitle jobtitle">
             <h3>Current - 2022 | SEM Account Manager @ SYNQ</h3>
         </div>
@@ -27,13 +30,14 @@ function Synq() {
     </div>
 
     <div class="cv-section-Synq-slide V2 slide">
-       <Buttons />
+       
         <div class="cv-section-Synq-about">
            <p>
             I'm currently part of the SYNQ team working as a Search Engine Marketing account manager, creating strategies and content for a portfolio of B2B and B2C
             Brands. My duties centre on increasing performance; budget planning, ad creation, reporting, website optimisation, and tracking implementation.
             </p>
         </div>
+        <Buttons/>
     </div>
 
 </Slide>

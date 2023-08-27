@@ -1,10 +1,11 @@
 import React from "react";
-import HubspotContactForm from '../../components/forms/form-hubspot'
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
 
 import { Buttons } from "../../components";
 import { slideConfig } from '../sliderConfig'
+
+import HubspotContactForm from '../../components/forms/form-hubspot'
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 import "./test.css";
 
@@ -50,7 +51,7 @@ import "./test.css";
     <>
       <Slide {...slideConfig} >
         <div className="cv-section-Test-slide V1 slide">
-          <Buttons />
+          
 
           <div className="cv-section-Test-jobtitle jobtitle">
             <h3>Digital Marketing Specialist</h3>
@@ -70,7 +71,7 @@ import "./test.css";
         </div>
 
         <div className="cv-section-Test-slide V2 slide">
-          <Buttons />
+          
           <div className="cv-section-Test-about-V2">
             <p>Test Slide
             </p>
