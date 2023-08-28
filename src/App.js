@@ -1,34 +1,22 @@
 import React, { useState, useEffect } from "react";
+
+import ContainersUnified from "./containers/ContainersUnified";
+import Test from "./containers/test/Test";
+
 import axios from "axios";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import "./App.css";
 import "./components/slide/slide.css";
-
-import {
-  Intro,
-  Synq,
-  Liv,
-  Tv,
-  Fankens,
-  Dl,
-  Piedras,
-  Tt,
-  Personal,
-  Test,
-} from "./containers";
-
-import { Navbar } from "./components";
-
-
+import "./App.css";
 
 function App() {
 
   const [names, setNames] = useState([]);
 
 
-useEffect(() => {
+  useEffect(() => {
 
-   axios
+    axios
       .get("https://api.api-ninjas.com/v1/babynames?gender=neutral", {
         headers: {
           "x-api-key": "A+Ncz8PzDeMNU8+IoLgv5A==MBYIfTL1vkeKCwdq",
@@ -45,25 +33,16 @@ useEffect(() => {
       });
 
 
-}, [])
+  }, [])
 
   return (
-    <>
-      <Navbar />
-      <Test/>
-      <Intro />
-      <Synq />
-      <Liv />
-      <Tv />
-      <Fankens />
-      <Dl />
-      <Piedras />
-      <Tt />
-      <Personal />
 
-      <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/143188444.js"></script>
-      
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ContainersUnified />} />
+        <Route path="/test" element={<Test />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
