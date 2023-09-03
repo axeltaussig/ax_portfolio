@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 
 import { Buttons } from "../../components";
-import { slideConfig } from "../sliderConfig";
+import { slideConfig } from "../SliderConfig";
 
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -9,9 +9,16 @@ import "react-slideshow-image/dist/styles.css";
 import "./tv.css";
 
 function Tv() {
+ const [transition, setTransition] = useState(false);
+
+  const change = () => {
+    setTransition(!transition);
+     document.body.parentElement.classList.toggle("stop-scrolling");
+  };
+
   return (
-    <>
-      <Slide {...slideConfig}>
+  <>
+    <Slide {...slideConfig} onStartChange={change} onChange={change}>
         <div className="cv-section-TV-slide V1 slide">
           <div className="cv-section-TV-jobtitle jobtitle">
             <h3>2020 | Digital Marketing Specialist @ Trade View</h3>

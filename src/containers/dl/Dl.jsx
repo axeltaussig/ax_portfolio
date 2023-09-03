@@ -1,7 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import { Buttons } from '../../components';
-import { slideConfig } from '../sliderConfig';
+import { slideConfig } from '../SliderConfig'
 
 import picKookaburra from './images/DL-imageArtboard 2HQ_V2.jpg'
 import picWaterfall from './images/DL-imageArtboard 3HQ_V2.jpg'
@@ -11,12 +10,19 @@ import 'react-slideshow-image/dist/styles.css';
 
 import './dl.css';
 
-
 function Dl() {
-  return (
-<>
 
-  <Slide {...slideConfig} >
+const [transition, setTransition] = useState(false);
+
+  const change = () => {
+    setTransition(!transition);
+     document.body.parentElement.classList.toggle("stop-scrolling");
+  };
+
+  return (
+  <>
+  
+    <Slide {...slideConfig} onStartChange={change} onChange={change}>
 
     <div className="cv-section-DL-slide V1 slide">
      

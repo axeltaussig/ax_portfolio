@@ -1,7 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-import { Buttons } from '../../components'
-import { slideConfig } from '../sliderConfig';
+import { slideConfig } from '../SliderConfig';
 
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css';
@@ -9,10 +8,18 @@ import 'react-slideshow-image/dist/styles.css';
 import './liv.css'
 
 function Liv() {
+
+const [transition, setTransition] = useState(false);
+
+  const change = () => {
+    setTransition(!transition);
+     document.body.parentElement.classList.toggle("stop-scrolling");
+  };
+
   return (
-   <>
-   
-         <Slide {...slideConfig}>
+  <>
+  
+    <Slide {...slideConfig} onStartChange={change} onChange={change}>
 
     <div className="cv-section-LIV-slide V1 slide">
       

@@ -1,3 +1,4 @@
+import React from 'react';
 
 import arrowPrev from '../assets/images/buttons/ArrowsArtboard 1.svg'
 import arrowNext from '../assets/images/buttons/ArrowsArtboard 1 copy.svg'
@@ -14,10 +15,13 @@ export const properties = {
     nextArrow: <button style={{ ...buttonStyle }}><img src={arrowNext} alt=""/></button>
 }
 
-export const slideConfig = {
+export  const slideConfig = {
     infinite: false,
     autoplay:false,
     easing:"ease-out",
     duration:300,
-    ...properties
-}
+    ...properties,
+};
+
+
+

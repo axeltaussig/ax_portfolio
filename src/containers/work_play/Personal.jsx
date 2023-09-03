@@ -1,11 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 
-import { Buttons } from "../../components";
-import { slideConfig } from "../sliderConfig";
+import { slideConfig } from "../SliderConfig";
 
 import picPp from "./images/Axel-Taussig-Icon.png";
-import arrowPrev from "../../assets/images/buttons/ArrowAsset 1Left.svg";
-import arrowNext from "../../assets/images/buttons/ArrowAsset 3right.svg";
 
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -13,9 +10,16 @@ import "react-slideshow-image/dist/styles.css";
 import "./personal.css";
 
 function Personal() {
+ const [transition, setTransition] = useState(false);
+
+  const change = () => {
+    setTransition(!transition);
+    document.body.parentElement.classList.toggle("stop-scrolling");
+  };
+
   return (
-    <>
-      <Slide {...slideConfig}>
+  <>
+    <Slide {...slideConfig} onStartChange={change} onChange={change}>
         <div className="cv-section-Personal-slide V1 slide">
           <div className="cv-section-Personal-jobtitle jobtitle">
             <h3>Work & Play</h3>

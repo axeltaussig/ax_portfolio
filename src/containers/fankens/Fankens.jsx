@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Buttons } from '../../components'
-import { slideConfig } from '../sliderConfig'
+import { slideConfig } from '../SliderConfig'
+
 
 import picFankenslogo from './images/Fankens Logo.png'
 
@@ -9,13 +10,21 @@ import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css';
 
 import './fankens.css'
+import { useEffect } from 'react'
 
 function Fankens() {
+
+  const [transition, setTransition] = useState(false);
+
+  const change = () => {
+    setTransition(!transition);
+     document.body.parentElement.classList.toggle("stop-scrolling");
+  };
+
   return (
   <>
   
-    <Slide {...slideConfig} >
-    
+    <Slide {...slideConfig} onStartChange={change} onChange={change}>
     <div className="cv-section-Fankens-slide V1 slide">
       
         <div className="cv-section-Fankens-jobtitle jobtitle">
