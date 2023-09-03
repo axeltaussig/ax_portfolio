@@ -19,7 +19,7 @@ export  const slideConfig = {
     infinite: false,
     autoplay:false,
     easing:"ease-out",
-    duration:300,
+    duration:200,
     ...properties,
 };
 
