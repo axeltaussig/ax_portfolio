@@ -104,15 +104,22 @@ h3 {
 
 .cv-section-Synq-colour {
     background-color: #0c54a6c8;
-    color: whitesmoke
+    color: whitesmoke;
 }
 
-;
-
 .cv-section-Synq-colour>ul>li>h3 {
-    color: whitesmoke
-} ;
+    color: whitesmoke;
+}
 
+/* button slider */
+
+button {
+       width: 30px; 
+       background: none;
+       border: 0px;
+       margin: 0 5vw;
+   }
+    
 /* Blink */
 
 /* .blink {
@@ -190,13 +197,18 @@ line-height: 50px;
     .cv-section-Piedras_V2-grid.mobile {
         display: none;
     }
-}
 
+    button {
+            width: 30px;
+            background: none;
+            border: 0px;
+            margin: 0 5vw;
+        };
+    
 /* Prevent Scrolling when slide is active */
-
-.stop-scrolling {
-    margin: 0;
-    height: 100%;
-    overflow: hidden
+        .stop-scrolling {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+        }
 }
-
