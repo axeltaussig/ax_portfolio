@@ -144,6 +144,14 @@
     grid-area: 13 / 1 / 16 / 7;
 }
 
+.cv-section-Piedras-quote.quote, .cv-section-Piedras-quote.quote p {
+ color: #FAFAFA;
+ border: none;
+ max-width: 300px;
+ width: 100%;
+ margin: 2px;
+}
+
 /* Piedras Mobile */
 
 @media only screen and (max-width: 800px) {
@@ -158,4 +166,8 @@
         background-size: cover;
         background-position: center;
     }
+        .cv-section-Piedras-quote.quote,
+        .cv-section-Piedras-quote.quote p {
+             max-width: 200px;
+        }
 }

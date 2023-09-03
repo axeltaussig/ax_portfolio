@@ -48,12 +48,14 @@ function Navbar() {
     <>
       <header className="main-head">
         <nav className="navbar">
+          <a className="name" href="/">
           <div className="name">
             <span>
               <i className="fa-solid fa-circle" />
             </span>
             <h1>Axel Taussig</h1>
           </div>
+          </a>
           <ul>
             <li ref={navbarValue}>Digital Marketing Specialist</li>
           </ul>

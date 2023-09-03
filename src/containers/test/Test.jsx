@@ -54,14 +54,11 @@ import "./test.css";
         <div className="cv-section-Test-slide V1 slide">
           
 
-          <div className="cv-section-Test-jobtitle">
-            <h3>Digital Marketing Specialist</h3>
+          <div className="cv-section-Test-jobtitle jobtitle">
+            <h3>Test slide</h3>
           </div>
           <div className="cv-section-Test-about-V1">
-            <p>Test Slide</p>
-
           <HubspotContactForm />
-
           </div>
         </div>
 

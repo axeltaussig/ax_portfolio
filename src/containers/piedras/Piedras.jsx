@@ -8,7 +8,7 @@ import picBanco from './images/imagesArtboard 4Piedras.png'
 import picTaller2 from './images/imagesArtboard 5Piedras.png'
 import picRaiandinomata from './images/imagesArtboard 6Piedras.png'
 import picCascada from './images/imagesArtboard 7Piedras.png'
-import picWaterfall from './images/imagesArtboard 8Piedras.png'
+import picWaterfall from './images/PiedrasAsset 3Swimming Pool.png'
 import picMt from './images/imagesArtboard 9Piedras.png'
 import piedrasLogo from './images/LogoArtboard 2HQ.png'
 
@@ -26,7 +26,12 @@ function Piedras() {
       <div class="cv-section-Synq-jobtitle jobtitle">
             <h3>2016 - 2018 | Co-Founder @ PIEDRAS</h3>
         </div>
+           <div className="cv-section-Piedras-quote quote">
+            <p>Construction of Waterfall
+for Swimming Pool</p>
+        </div>
       </div>
+    
 
     <div className="cv-section-Piedras-slide V2 slide">
    
