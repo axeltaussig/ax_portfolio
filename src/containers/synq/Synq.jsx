@@ -37,7 +37,7 @@ function Synq() {
             Brands. My duties centre on increasing performance; budget planning, ad creation, reporting, website optimisation, and tracking implementation.
             </p>
         </div>
-        <Buttons/>
+       
     </div>
 
 </Slide>

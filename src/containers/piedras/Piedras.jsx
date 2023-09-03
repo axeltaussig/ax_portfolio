@@ -10,6 +10,7 @@ import picRaiandinomata from './images/imagesArtboard 6Piedras.png'
 import picCascada from './images/imagesArtboard 7Piedras.png'
 import picWaterfall from './images/imagesArtboard 8Piedras.png'
 import picMt from './images/imagesArtboard 9Piedras.png'
+import piedrasLogo from './images/LogoArtboard 2HQ.png'
 
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -22,13 +23,15 @@ function Piedras() {
       <Slide {...slideConfig}>
 
     <div className="cv-section-Piedras-slide V1 slide">
-     
+      <div class="cv-section-Synq-jobtitle jobtitle">
+            <h3>2016 - 2018 | Co-Founder @ PIEDRAS</h3>
+        </div>
       </div>
 
     <div className="cv-section-Piedras-slide V2 slide">
    
         <div className="cv-section-Piedras_V2-text">
-            <img src="./Img/Piedras/1x/LogoArtboard 2HQ.png" alt=""/>
+            <img src={piedrasLogo} alt=""/>
             <p>PIEDRAS was conceived with the purpose of bringing natural environments into our daily lives. The company's core
             concentration lay in the construction of rockworks for landscape architecture.</p>
             <p>I primarily was focused towards digital client acquisition, client negotiations, and project
@@ -45,7 +48,7 @@ function Piedras() {
             <div className="image image-6"><img src={picBanco} alt=""/></div>
             <div className="image image-7"><img src={picTaller2} alt=""/></div>
         </div>
-        <Buttons/>
+
     </div>
 
     </Slide>

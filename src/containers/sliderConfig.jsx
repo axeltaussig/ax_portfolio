@@ -1,6 +1,6 @@
 
-import arrowPrev from '../assets/images/buttons/ArrowAsset 1Left.svg'
-import arrowNext from '../assets/images/buttons/ArrowAsset 3right.svg'
+import arrowPrev from '../assets/images/buttons/ArrowsArtboard 1.svg'
+import arrowNext from '../assets/images/buttons/ArrowsArtboard 1 copy.svg'
 
 export const buttonStyle = {
     width: "30px",

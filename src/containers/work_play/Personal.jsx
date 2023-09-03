@@ -13,26 +13,6 @@ import "react-slideshow-image/dist/styles.css";
 import "./personal.css";
 
 function Personal() {
-  const buttonStyle = {
-    width: "30px",
-    background: "none",
-    border: "0px",
-    margin: "0 50px",
-  };
-
-  const properties = {
-    prevArrow: (
-      <button style={{ ...buttonStyle }}>
-        <img src={arrowPrev} alt="" />
-      </button>
-    ),
-    nextArrow: (
-      <button style={{ ...buttonStyle }}>
-        <img src={arrowNext} alt="" />
-      </button>
-    ),
-  };
-
   return (
     <>
       <Slide {...slideConfig}>
@@ -68,7 +48,6 @@ function Personal() {
               accepting, reading, investigating, cosy places, and lots more.
             </p>
           </div>
-          <Buttons />
         </div>
       </Slide>
     </>

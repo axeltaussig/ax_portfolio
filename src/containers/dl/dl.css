@@ -22,7 +22,8 @@
 }
 
 .cv-section-DL-slide.V1 {
-    background: radial-gradient(113.30% 46.10% at 40.60% 49.06%, rgba(0, 0, 0, 0.00) 54.83%, rgba(0, 0, 0, 0.617) 100%), url(./images/DL-imageAsset\ 1home.jpeg);
+    /* background: radial-gradient(113.30% 46.10% at 40.60% 49.06%, rgba(0, 0, 0, 0.00) 54.83%, rgba(0, 0, 0, 0.617) 100%), url(./images/DL-imageAsset\ 1home.jpeg); */
+    background: radial-gradient(70.3% 60.1% at 43.6% 53.06%, rgba(0, 0, 0, 0.00) 56.83%, rgba(0, 0, 0, 0.917) 112%), url(./images/DL-imageAsset\ 1home.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -110,5 +111,9 @@
     .cv-section-DL-slide.V1 {
         background-position-x: 0px, -300px;
         background-position-y: 0px, 0px;
+    }
+    .cv-section-DL_V2-about-text {
+        max-width: var(---text-mobile-max-width);
+        margin: auto;
     }
 }

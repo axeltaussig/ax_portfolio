@@ -86,4 +86,7 @@
         position: initial;
         max-width: var(---text-mobile-max-width);
     }
+        .cv-section-TV-slide.V1 {
+            padding-left: calc(5vw + 2px);
+        }
 }

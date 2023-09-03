@@ -11,6 +11,7 @@ function Navbar() {
   const section = document.querySelectorAll(".slide.V1");
   const array = Array.from(section);
 
+
   let navbarValue = useRef(null);
   let innerTextQuote = ""; // Initialize the variable
 
@@ -18,40 +19,25 @@ function Navbar() {
 
    useEffect(() => {
 
-     let prevJobTitles = {};
-
-
     for (let index = 0; index < array.length; index++) {
       const elementSection = array[index];
+
       const jobTitle = elementSection.querySelector(".jobtitle h3");
-      
+      console.log(navbarValue.current.style.backgroundColor)
 
       if (jobTitle) {
         ScrollTrigger.create({
           trigger: elementSection,
-          start: "50% +=200",
-          end: "+=500 bottom",
-          markers: true,
+          start: "50% +=90%",
+          end: "150% bottom",
+          
 
           onEnter: function () {
-            // innerTextQuote = jobTitle.innerText;
-            // console.log(innerTextQuote);
-            // console.log(navbarValue.current.innerText);
-            
-            // navbarValue.current.innerText = innerTextQuote;
-
-            console.log(prevJobTitles)
-
-            prevJobTitles[elementSection] = jobTitle.innerText; 
-            navbarValue.current.innerText = prevJobTitles[elementSection];
+         navbarValue.current.innerText = jobTitle.innerText;
+        //  navbarValue.current.style.backgroundColor = "#AA0000";
           },
-
           onEnterBack: function () {
-            // navbarValue.current.innerText = 'red';
-            navbarValue.current.innerText = prevJobTitles[elementSection];
-
-            console.log(prevJobTitles)
-
+         navbarValue.current.innerText = jobTitle.innerText;
           }
         });
       }
@@ -71,7 +57,7 @@ function Navbar() {
           <ul>
             <li ref={navbarValue}>Digital Marketing Specialist</li>
           </ul>
-          <a href="https://www.hyperfocus.au">
+          <a target="_blank" rel="noreferrer" href="https://www.hyperfocus.au">
             <p>Personal Projects</p>
             <h2>Hyperfocus</h2>
           </a>

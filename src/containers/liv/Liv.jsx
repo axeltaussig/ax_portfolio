@@ -39,7 +39,7 @@ function Liv() {
             Projects I worked on include the creation of a new company website from concept to release, an increased membership year by a net 3%, 200+ empowerment initiatives, and Coordinated the Diverse Voices in the Law publication.
         </p>
         </div>
-        <Buttons/>
+ 
     </div>
     </Slide>
    

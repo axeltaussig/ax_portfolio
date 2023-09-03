@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Buttons } from "../../components";
+import { Buttons, Navbar } from "../../components";
 import { slideConfig } from '../sliderConfig'
 
 import HubspotContactForm from '../../components/forms/form-hubspot'
@@ -49,11 +49,12 @@ import "./test.css";
   
   return (
     <>
+    <Navbar />
       <Slide {...slideConfig} >
         <div className="cv-section-Test-slide V1 slide">
           
 
-          <div className="cv-section-Test-jobtitle jobtitle">
+          <div className="cv-section-Test-jobtitle">
             <h3>Digital Marketing Specialist</h3>
           </div>
           <div className="cv-section-Test-about-V1">
@@ -61,12 +62,6 @@ import "./test.css";
 
           <HubspotContactForm />
 
-          </div>
-          <div className="cv-section-Test-quote quote">
-            <p>
-              This website is currently under construction - created with HTML,
-              CSS and Vanilla JS
-            </p>
           </div>
         </div>
 

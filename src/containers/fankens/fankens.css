@@ -44,6 +44,7 @@
 
 .cv-section-Fankens-slide.V1>img {
     margin-right: -20px;
+   
 }
 
 .cv-section-Fankens-slide.V2 {
@@ -72,4 +73,8 @@
     .cv-section-Fankens_V2-about p {
         max-width: var(---text-mobile-max-width);
     }
+        .cv-section-Fankens-slide.V1>img {
+           width: 100%;
+           max-width: 500px;
+        }
 }

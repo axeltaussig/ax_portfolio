@@ -87,4 +87,9 @@
     .cv-section-TT_V2--cardblock {
         flex-direction: column-reverse;
     }
+
+    .cv-section-TT_V2-text {
+        max-width: var(---text-mobile-max-width);
+            margin: auto;
+    }
 }

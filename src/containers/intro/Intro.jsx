@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Buttons } from "../../components";
-import { buttonStyle, slideConfig } from '../sliderConfig'
+import { slideConfig } from '../sliderConfig'
 
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";

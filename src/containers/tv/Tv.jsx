@@ -42,7 +42,7 @@ function Tv() {
               business increased sales and presence above industry benchmarks.
             </p>
           </div>
-          <Buttons />
+  
         </div>
       </Slide>
     </>

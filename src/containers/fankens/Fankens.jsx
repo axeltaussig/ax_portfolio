@@ -34,7 +34,7 @@ function Fankens() {
         My passion for advertising and collaborating with clients to create
         their brands and improve their web visibility led to the start of my freelance work and marked the inception of my journey as an Search Engine Specialist.</p>
         </div>
-        <Buttons/>
+  
         </div>
 
 

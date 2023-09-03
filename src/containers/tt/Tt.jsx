@@ -76,7 +76,7 @@ function Tt() {
               </p>
             </div>
           </div>
-          <Buttons />
+ 
         </div>
       </Slide>
     </>

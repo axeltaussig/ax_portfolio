@@ -75,8 +75,8 @@
 }
 
 .cv-section-Personal_V2-about {
-    width: 900px;
-    height: 500px;
+    max-width: 900px;
+    max-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,9 +112,21 @@
     }
 
     .cv-section-Personal-slide.V1 {
-        background: radial-gradient(52.3% 41.1% at 40.60% 48.06%, rgba(0, 0, 0, 0.00) 75.83%, rgba(0, 0, 0, 0.617) 100%), url(./images/Axel-Taussig-Icon.png);
+        background: radial-gradient(52.3% 41.1% at 40.60% 48.06%, rgba(0, 0, 0, 0.00) 75.83%, rgba(0, 0, 0, 0.617) 100%), url(./images/Drinking-Mate_2.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        width: 100%;
     }
+
+        .cv-section-Personal_V2-about {
+            max-width: var(---text-mobile-max-width);
+                margin: auto;
+                
+        }
+
+                .cv-section-Personal_V2-about p {
+                font-size: 1.5rem;
+                }
+
 }

@@ -87,4 +87,7 @@
     .cv-section-Intro-about-V2>p {
         max-width: var(---text-mobile-max-width);
     }
-}
+    .cv-section-Intro-slide.V1 {
+            padding-left: 10vw;
+    }
+}   

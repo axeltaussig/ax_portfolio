@@ -52,10 +52,11 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .cv-section-LIV-quote {
+    .cv-section-LIV-quote.quote {
         position: absolute;
-        bottom: 80vh;
         left: 50vw;
+            bottom: 80vh;
+
     }
 
     .cv-section-LIV-slide.V2 p {
