@@ -37,7 +37,6 @@ const Context = useRef()
                   trigger: TTR.current,
                   start: "-500 top",
                   end: "end end",
-                  markers: true,
                 }   
     });
 
