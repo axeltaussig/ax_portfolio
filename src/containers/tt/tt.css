@@ -76,7 +76,10 @@
 @media only screen and (max-width: 800px) {
 
     .cv-section-TT-slide.V1 .quote {
-        max-width: 230px;
+        max-width: 240px;
+        bottom: 10vh;
+            left: 50vw;
+            position: absolute;
     }
 
     .cv-section-TT_V2-text {

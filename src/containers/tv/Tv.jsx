@@ -1,29 +1,61 @@
-import React, {useState} from "react";
+import React, {useState, useLayoutEffect, useRef} from "react";
 
 import { Buttons } from "../../components";
 import { slideConfig } from "../SliderConfig";
 
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "./tv.css";
 
-function Tv() {
- const [transition, setTransition] = useState(false);
+//select font TTR
+  //  const theTradingRevolution = document.querySelectorAll(".cv-section-TV-TTR");
 
-  const change = () => {
-    setTransition(!transition);
-     document.body.parentElement.classList.toggle("stop-scrolling");
-  };
+
+function Tv() {
+
+//  const [transition, setTransition] = useState(false);
+const TTR = useRef()
+const Context = useRef()
+
+  // const change = () => {
+  //   setTransition(!transition);
+  //    document.body.parentElement.classList.toggle("stop-scrolling");
+  // };
+
+  //  gsap.registerPlugin(ScrollTrigger);
+
+  useLayoutEffect(() => {
+
+      let ctx = gsap.context(() => {
+
+     gsap.to(TTR.current, {
+      color: "#11374D", ease: "sine", duration: 1.2,
+              scrollTrigger: {
+                  trigger: TTR.current,
+                  start: "-500 top",
+                  end: "end end",
+                  markers: true,
+                }   
+    });
+
+ }, Context); // <- IMPORTANT! Scopes selector text
+
+
+   return () => ctx.revert(); // cleanup
+  
+  }, []); // <- empty dependency Array so it doesn't re-run on every render
 
   return (
   <>
-    <Slide {...slideConfig} onStartChange={change} onChange={change}>
-        <div className="cv-section-TV-slide V1 slide">
+    <Slide {...slideConfig} >
+        <div ref={Context} className="cv-section-TV-slide V1 slide">
           <div className="cv-section-TV-jobtitle jobtitle">
             <h3>2020 | Digital Marketing Specialist @ Trade View</h3>
           </div>
-          <div className="cv-section-TV-TTR">
+          <div ref={TTR} className="cv-section-TV-TTR">
             <p>
               The
               <br />

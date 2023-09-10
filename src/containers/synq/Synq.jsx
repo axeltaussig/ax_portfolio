@@ -19,7 +19,7 @@ const [transition, setTransition] = useState(false);
   return (
   <>
   
-    <Slide {...slideConfig} onStartChange={change} onChange={change}>
+    <Slide {...slideConfig } onStartChange={change} onChange={change}>
 
     <div class="cv-section-Synq-slide V1 slide">
         

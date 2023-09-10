@@ -40,15 +40,15 @@ function Personal() {
             <p>
               I love
               <br />
-              Coffee, soccer, roller hockey, rollerblades at the skatepark,
+              Coffee, football, roller hockey, rollerblades at the skatepark,
               peace, talking on the phone, riding my bike, stories, crafts,
               editing, alfajores, creating videos, botanicals, reggae, playing
               the drums, kindness, challenges, funky stuff, taking pictures,
-              more of that, tennis, cumbia, self-help books, rock & roll,
+              tennis, cumbia, self-help books, rock & roll,
               spending time with friends and family, water, challenging the
-              status quo, the cold wind on my face, crazy ideas, wise people,
+              status quo, the cold wind on my face, wise people,
               dulce de leche, mate, experimenting, wine, empanadas, playing
-              board games, amaros, Dr House, sleeping, fernet, exploring,
+              board games, amaros, sleeping, fernet,
               accepting, reading, investigating, cosy places, and lots more.
             </p>
           </div>

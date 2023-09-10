@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 
-import { Buttons } from "../../components";
 import { slideConfig } from "../SliderConfig";
 
 import picTt from "./images/Alejanndro-Taussig_Fabian-Taussig-Marcelo-Taussig.png";
